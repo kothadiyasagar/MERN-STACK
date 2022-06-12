@@ -14,7 +14,7 @@ app.use(express.json());
 
 
  app.use("/",router)
-app.listen(5080, async () => {
+app.listen(8080, async () => {
     try {
       await connection;
       console.log("connection to db");
