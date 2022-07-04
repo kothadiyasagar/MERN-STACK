@@ -10,10 +10,10 @@ const Container = styled(FormGroup)`
     }
 `
 const defaultValue = {
-    name:"",
-    username:"",
-    email:"",
-    phone:"",
+     Title:"",
+     Label:"",
+     Note:"",
+   
 }
 const AddUser = ()=>{
     const navigate =useNavigate()
@@ -34,28 +34,23 @@ const AddUser = ()=>{
             <FormControl>
              
                 <InputLabel>
-                Name
+                Title
                 </InputLabel>
-                <Input  onChange={(e)=>onValueChange(e)} name="name"/>
+                <Input   onChange={(e)=>onValueChange(e)} name="Title"/>
                 </FormControl>
                 <FormControl>
                 <InputLabel>
-                Username
+                  Label
                 </InputLabel>
-                <Input onChange={(e)=>onValueChange(e)} name="username"/>
+                <Input onChange={(e)=>onValueChange(e)} name="Label"/>
                 </FormControl>
                 <FormControl>
                 <InputLabel>
-                Email
+                  Note
                 </InputLabel>
-                <Input onChange={(e)=>onValueChange(e)} name="email"/>
+                <Input onChange={(e)=>onValueChange(e)} name="Note"/>
                 </FormControl>
-                <FormControl>
-                <InputLabel>
-                Phone
-                </InputLabel>
-                <Input onChange={(e)=>onValueChange(e)}  name="phone"/>
-                </FormControl>
+               
                <FormControl>
                    <Button variant="contained" onClick={()=>addUserDetailes()}>Add User</Button>
                </FormControl>

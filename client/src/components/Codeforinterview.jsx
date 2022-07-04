@@ -2,7 +2,7 @@
 const Codeforinterview = ()=>{
     return (
         <>
-        <p>hello int</p>
+        <p>Home page</p>
         </>
     )
 }

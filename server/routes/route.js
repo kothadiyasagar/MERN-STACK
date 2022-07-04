@@ -7,11 +7,13 @@ const router = Router()
 
    
 router.post("/add", async(req,res, next)=>{
-    res.setHeader("content-type","application/json")
+  
     console.log(req.body)
     const users= new User({ ...req.body });
+    res.setHeader("content-type","application/json")
+   
 
-    res.json(await users.save());
+        await users.save()
     res.send("done")
     
 })

@@ -44,28 +44,23 @@ const EdditUser = ()=>{
             <FormControl>
              
                 <InputLabel>
-                Name
+                 Title
                 </InputLabel>
-                <Input  onChange={(e)=>onValueChange(e)}  value={user.name} name="name"   />
+                <Input  onChange={(e)=>onValueChange(e)}  value={user.name} name="Title"   />
                 </FormControl>
                 <FormControl>
                 <InputLabel>
-                Username
+                 Lable
                 </InputLabel>
-                <Input onChange={(e)=>onValueChange(e)} value={user.username} name="username" />
+                <Input onChange={(e)=>onValueChange(e)} value={user.username} name="Lable" />
                 </FormControl>
                 <FormControl>
                 <InputLabel>
-                Email
+                Note
                 </InputLabel>
-                <Input onChange={(e)=>onValueChange(e)} value={user.email} name="email"  />
+                <Input onChange={(e)=>onValueChange(e)} value={user.email} name="Note"  />
                 </FormControl>
-                <FormControl>
-                <InputLabel>
-                Phone
-                </InputLabel>
-                <Input onChange={(e)=>onValueChange(e)}  value={user.phone} name="phone" />
-                </FormControl>
+            
                <FormControl>
                    <Button variant="contained" onClick={()=>editUserDetailes()}>Edit User</Button>
                </FormControl>
