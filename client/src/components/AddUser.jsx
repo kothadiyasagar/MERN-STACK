@@ -11,8 +11,8 @@ const Container = styled(FormGroup)`
 `
 const defaultValue = {
      Title:"",
-     Label:"",
      Note:"",
+     Label:""
    
 }
 const AddUser = ()=>{
@@ -42,7 +42,7 @@ const AddUser = ()=>{
                 <InputLabel>
                   Label
                 </InputLabel>
-                <Input onChange={(e)=>onValueChange(e)} name="Label"/>
+                <Input onChange={(e)=>onValueChange(e)} name=" Lable"/>
                 </FormControl>
                 <FormControl>
                 <InputLabel>
